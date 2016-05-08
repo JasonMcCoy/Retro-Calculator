@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -193,6 +198,16 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-bl-alb">
+                                <rect key="frame" x="175" y="101" width="233" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="233" id="ShE-Vn-Je5"/>
+                                    <constraint firstAttribute="height" constant="39" id="d6N-ZW-AOc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="4fb-fp-3x2">
                                 <rect key="frame" x="0.0" y="542" width="600" height="58"/>
                                 <constraints>
@@ -206,12 +221,14 @@
                             <constraint firstItem="4fb-fp-3x2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5jD-7U-bYN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rDL-qN-kb6" secondAttribute="bottom" id="8m8-ra-Kej"/>
                             <constraint firstItem="NTC-pl-QsQ" firstAttribute="centerY" secondItem="VkJ-6I-HBo" secondAttribute="centerY" constant="50" id="9Dg-tE-IiQ"/>
+                            <constraint firstItem="W1T-bl-alb" firstAttribute="trailing" secondItem="VkJ-6I-HBo" secondAttribute="trailing" constant="-130" id="B2e-ff-R9N"/>
                             <constraint firstItem="rDL-qN-kb6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Fih-7d-xoq"/>
                             <constraint firstAttribute="trailing" secondItem="4fb-fp-3x2" secondAttribute="trailing" id="I5W-1x-l5O"/>
                             <constraint firstItem="NTC-pl-QsQ" firstAttribute="centerX" secondItem="VkJ-6I-HBo" secondAttribute="centerX" id="XaW-Fw-VY1"/>
                             <constraint firstItem="rDL-qN-kb6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eTY-DM-J2h"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4fb-fp-3x2" secondAttribute="bottom" id="fEM-9z-V6z"/>
                             <constraint firstAttribute="trailing" secondItem="rDL-qN-kb6" secondAttribute="trailing" id="jYq-vT-84e"/>
+                            <constraint firstItem="W1T-bl-alb" firstAttribute="top" secondItem="VkJ-6I-HBo" secondAttribute="top" constant="32" id="tx1-bf-Cgl"/>
                             <constraint firstItem="VkJ-6I-HBo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y4g-D2-aKR"/>
                         </constraints>
                     </view>
