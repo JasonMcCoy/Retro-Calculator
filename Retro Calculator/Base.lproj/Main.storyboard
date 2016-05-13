@@ -186,6 +186,9 @@
                                                     <constraint firstAttribute="width" constant="61" id="ec4-Ho-eP3"/>
                                                 </constraints>
                                                 <state key="normal" image="divide"/>
+                                                <connections>
+                                                    <action selector="whenDivideButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="veA-Sa-VDa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZ5-FN-rXV">
                                                 <rect key="frame" x="172" y="0.0" width="61" height="63"/>
@@ -194,6 +197,9 @@
                                                     <constraint firstAttribute="height" constant="63" id="nO7-Qm-GfY"/>
                                                 </constraints>
                                                 <state key="normal" image="multiply"/>
+                                                <connections>
+                                                    <action selector="whenMultipyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiZ-Zy-GmR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -207,6 +213,9 @@
                                                     <constraint firstAttribute="height" constant="63" id="eox-oX-zCK"/>
                                                 </constraints>
                                                 <state key="normal" image="subtract"/>
+                                                <connections>
+                                                    <action selector="whenSubtractButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgf-Qs-vKy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5H-ck-Uik">
                                                 <rect key="frame" x="86" y="0.0" width="61" height="63"/>
@@ -215,6 +224,9 @@
                                                     <constraint firstAttribute="width" constant="61" id="bhi-AZ-RGU"/>
                                                 </constraints>
                                                 <state key="normal" image="add"/>
+                                                <connections>
+                                                    <action selector="whenAdditionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lY6-8v-b9K"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="za6-1v-ios">
                                                 <rect key="frame" x="172" y="0.0" width="61" height="63"/>
@@ -223,12 +235,15 @@
                                                     <constraint firstAttribute="width" constant="61" id="itJ-VY-c6t"/>
                                                 </constraints>
                                                 <state key="normal" image="equal"/>
+                                                <connections>
+                                                    <action selector="whenEqualButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5N-If-3ug"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-bl-alb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1T-bl-alb">
                                 <rect key="frame" x="175" y="101" width="233" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="233" id="ShE-Vn-Je5"/>
@@ -262,6 +277,9 @@
                             <constraint firstItem="VkJ-6I-HBo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y4g-D2-aKR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="W1T-bl-alb" id="JVR-4S-1Qk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
