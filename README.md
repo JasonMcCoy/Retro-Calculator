@@ -1,4 +1,4 @@
-# Retro-Calculator
+# Retro Calculator
 # By Jason McCoy
 
 This is a simple space/retro calculator that will suit your everyday calculation needs. Calculate decimals, percentages & more in this beautifully crafted calculator app.
