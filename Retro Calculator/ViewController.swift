@@ -45,7 +45,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberPressed(btn: UIButton!) {
-        buttonSound.play()
+        playSound()
+        
         numberBeingDisplayed += "\(btn.tag)"
         outputLabel.text = numberBeingDisplayed
     }
@@ -81,20 +82,19 @@ class ViewController: UIViewController {
             numberBeingDisplayed = ""
             
             if currentOperation == Operation.divideOperator {
-                result = "\(Double(leftNumber))! / \(Double(rightNumber))"
+                result = "\(Double(leftNumber))! / \(Double(rightNumber)!)"
             } else if currentOperation == Operation.multiplyOperator {
-                result = "\(Double(leftNumber))! * \(Double(rightNumber))"
+                result = "\(Double(leftNumber))! * \(Double(rightNumber)!)"
             } else if currentOperation == Operation.subtractOperator {
-                result = "\(Double(leftNumber))! - \(Double(rightNumber))"
+                result = "\(Double(leftNumber))! - \(Double(rightNumber)!)"
             } else if currentOperation == Operation.additionOperator {
-                result = "\(Double(leftNumber))! + \(Double(rightNumber))"
+                result = "\(Double(leftNumber))! + \(Double(rightNumber)!)"
             }
             
             leftNumber = result
             outputLabel.text = result
-            }
-            
             currentOperation = op
+            }
             
         } else {
             // This is the first time an operator has been pressed
