@@ -3,6 +3,7 @@
 
 This is a simple space/retro calculator that will suit your everyday calculation needs. Calculate simple addition, subtraction, multiplication and division in this beautifully crafted calculator app.
 
+
 Here is what the app looks like!
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/05/Screen-Shot-2016-05-14-at-2.59.13-PM.png)
 
