@@ -12,3 +12,6 @@ and...
 
 Here is a brief snippet of my code (showing off the beautiful theme!)
 ![alt tag](http://mccoygames.com/wp-content/uploads/2016/05/Screen-Shot-2016-05-14-at-3.01.06-PM.png)
+
+and...
+![alt tag](http://mccoygames.com/wp-content/uploads/2016/05/Screen-Shot-2016-05-14-at-3.04.39-PM.png)
