@@ -82,13 +82,13 @@ class ViewController: UIViewController {
             numberBeingDisplayed = ""
             
                     if currentOperation == Operation.divideOperator {
-                        result = "\(Double(leftNumber))! / \(Double(rightNumber)!)"
+                        result = "\(Double(leftNumber)! / Double(rightNumber)!)"
                     } else if currentOperation == Operation.multiplyOperator {
-                        result = "\(Double(leftNumber))! * \(Double(rightNumber)!)"
+                        result = "\(Double(leftNumber)! * Double(rightNumber)!)"
                     } else if currentOperation == Operation.subtractOperator {
-                        result = "\(Double(leftNumber))! - \(Double(rightNumber)!)"
+                        result = "\(Double(leftNumber)! - Double(rightNumber)!)"
                     } else if currentOperation == Operation.additionOperator {
-                        result = "\(Double(leftNumber))! + \(Double(rightNumber)!)"
+                        result = "\(Double(leftNumber)! + Double(rightNumber)!)"
                     }
                 
                     leftNumber = result
